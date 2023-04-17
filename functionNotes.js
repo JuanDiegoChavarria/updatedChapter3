@@ -31,12 +31,33 @@
 //
 // printMax(8,9);
 
+// function sum(number1, number2){
+//     console.log(`${number1} + ${number2} = ${number1+number2}`)
+// }
+//
+// sum(7,12);
+// sum(0,5);
 
 
-
-function sum(number1, number2){
-    console.log(`${number1} + ${number2} = ${number1+number2}`)
+function printMax(){
+    let x = 56;
+    let y = 103;
+    if(x<y){
+        console.log(`the smaller number is ${x}`)
+    }else {
+        console.log(`the smaller number is ${y}`)
+    }
 }
+printMax();
 
-sum(7,12);
-sum(0,5);
+// function temp(){
+//     let x = 32;
+//     let y = 100;
+//
+//     if(x>y){
+//         console.log(`when water is at ${x} degrees celsius it is a solid`)
+//     }else {
+//         console.log(`when water is at ${y} degrees celsius it is a liquid`)
+//     }
+// }
+// temp();
