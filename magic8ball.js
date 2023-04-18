@@ -7,4 +7,3 @@ let answer2 = readline.question("what is your question? \n Your answer: ")
     let answer = answers[randomNum];
 
 console.log(answer);
- 
