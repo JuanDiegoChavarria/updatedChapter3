@@ -4,7 +4,7 @@ let diceRolled = []
 let eyeColors = ['blue','green','brown','hazel','black'];
 let race = ['werewolf','vampire','','giant','dwarf','elf'];
 let job = ['Black Smith','stone mason','miner','swords men','king','prince']
-
+let specialSkill = ['wall vision', 'super jump','flight','mind control']
 let character1 = {
 //empty to start
 }
@@ -60,7 +60,7 @@ function createChar(list, character){
     character.race = pickRandomChoice2(race);
     character.eyeColor = pickRandomChoice(eyeColors);
     character.job = pickRandomChoice3(job);
-
+    character.specialSkill = pickRandomChoice4(specialSkill)
     console.log('Rolling STR')
     character.strength= rollStat(diceRolled);
     console.log('Rolling DEX')
@@ -82,6 +82,7 @@ function displayChar(char){
     console.log(`Race: ${char.race}`)
     console.log(`Job: ${char.job}`)
     console.log(`Eye color: ${char.eyeColor}`)
+    console.log(`Special Skill: ${char.specialSkill}`)
     console.log(`STR: ${char.strength}`);
     console.log(`DEX: ${char.dexterity}`);
     console.log(`CON: ${char.constitution}`);
