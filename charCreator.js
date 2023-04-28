@@ -9,10 +9,11 @@ let character1 = {
 //empty to start
 }
 
+
 createChar(character1,diceRolled);
 
 function rolld6(){
-    return Math.ceil(Math.random()*6)
+    return Math.ceil(Math.random*6)
 }
 
 function rollDice(amount, list){

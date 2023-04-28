@@ -39,16 +39,16 @@
 // sum(0,5);
 
 
-function printMax(){
-    let x = 56;
-    let y = 103;
-    if(x<y){
-        console.log(`the smaller number is ${x}`)
-    }else {
-        console.log(`the smaller number is ${y}`)
-    }
-}
-printMax();
+// function printMax(){
+//     let x = 56;
+//     let y = 103;
+//     if(x<y){
+//         console.log(`the smaller number is ${x}`)
+//     }else {
+//         console.log(`the smaller number is ${y}`)
+//     }
+// }
+// printMax();
 
 // function temp(){
 //     let x = 32;

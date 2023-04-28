@@ -8,18 +8,18 @@
 // count(7)
 // count(2)
 
-// function count(n) {
-//     let myArr = [];
-//     for (let i = 1; i <= n; i++) {
-//         myArr.push(i);
-//     }if(count[n] >= 0){
-//         console.log(`invalid`)
-//     }else{
-//         console.log(myArr);
-//     }
-// }
-// count(7)
-// count(2)
+function count(n) {
+    let myArr = [];
+    for (let i = 1; i <= n; i++) {
+        myArr.push(i);
+    }if(count[n] >= 0){
+        console.log(`invalid`)
+    }else{
+        console.log(myArr);
+    }
+}
+count(10)
+count(11)
 
 // function count(n) {
 //     let myArr=[1,2];

@@ -85,7 +85,7 @@ let shoe = {
     shoeName: 'mamalons',
     type: 'nike presto',
     ratings: 9,
-    size: '9.5',
+    size: '9.5'
 }
 console.log(shoe)
 

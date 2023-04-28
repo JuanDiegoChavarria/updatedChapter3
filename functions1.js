@@ -5,11 +5,11 @@
     // sum(7,12);
     // sum(0,5);
 
-    // function sum(pie, value1, value2){
-    //     console.log(`${pie} * ${value1} * ${value2} = ${value1+value2+pie}`)
-    // }
-    // sum(3.14,12,5);
-    // sum(3.14,5,6);
+    function sum(pie, value1, value2){
+        console.log(`${pie} + ${value1} + ${value2} = ${value1+value2+pie}`)
+    }
+    sum(3.14,12,5);
+    sum(3.14,5,6);
 
     // function printMax(){
     //     let x = 56;
@@ -68,13 +68,13 @@
     // temp();
 
 
-function printMax(){
-    let x = 6;
-    let y = 29;
-    if(x>=y){
-        console.log(`the larger number is ${x}`)
-    }else {
-        console.log(`the larger number is ${y}`)
-    }
-}
-printMax();
+// function printMax(){
+//     let x = 6;
+//     let y = 29;
+//     if(x>=y){
+//         console.log(`the larger number is ${x}`)
+//     }else {
+//         console.log(`the larger number is ${y}`)
+//     }
+// }
+// printMax();
