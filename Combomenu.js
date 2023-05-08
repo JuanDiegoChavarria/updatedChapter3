@@ -86,7 +86,7 @@ let cost5 = [];
         let answer9 = readline.question("how many ketchup packets? \n Your answer: ");
         items.push(answer9);
     }if (answer9 == 1,2,3,4,5,6,7,8,9,10){
-        cost5.push(0.25)
+        cost5.push(0.25 * answer9)
     }
 
 
