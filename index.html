@@ -18,7 +18,6 @@
     inputElement.addEventListener('change', function(e){
         console.log(`The value you entered is ${e.target.value}`);
     });
-
     inputElement.addEventListener('input', function(e){
         console.log(`The value you entered is ${e.target.value}`);
     });
@@ -26,9 +25,9 @@
        console.log('You clicked on my button')
         e.stopPropagation();
     });
-    parentElement.addEventListener('click',function (e){
+    parentElement.addEventListener('click',function(e){
         console.log('You clicked on the parent containing div.')
-    })
+    });
     buttonElement.addEventListener('mouseover', function(e){
         console.log('Your mouse is on the button')
     });
@@ -43,6 +42,9 @@
     });
     document.addEventListener('keydown', function(e){
        console.log(e)
+    });
+    document.addEventListener('keydown', function(e){
+       console.log(`you just hit the ${e.key} key `);
     });
     </script>
 </body>
