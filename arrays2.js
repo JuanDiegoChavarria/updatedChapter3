@@ -11,21 +11,21 @@
 
 
 //2
-// function lastelement(arr){
+// function lastElement(arr){
 //     console.log( )
 //         if(arr[arr.length - 1] <= 0){
 //             console.log('invalid')
 //         }
 //
-// } lastelement( ['a', 'b', 'c', 'd' ,'e'] )
-// lastelement( [7, 5, 3, 1, 0, -2] )
+// } lastElement( ['a', 'b', 'c', 'd' ,'e'] )
+// lastElement( [7, 5, 3, 1, 0, -2] )
 
 
 //3
-// function replace(certainnum, x) {
+// function replace(CertainNum, x) {
 //     let number = [];
-//     for (let i = 0; i < certainnum.length;i++){
-//         number.push(certainnum[i]);
+//     for (let i = 0; i < CertainNum.length;i++){
+//         number.push(CertainNum[i]);
 //         number[i] = x;
 //     }
 //     console.log(number)
@@ -85,12 +85,12 @@
     // }
 // biggerThanFour([-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]);
 // 8
-function biggerThanNum(arr, num){
-for (let i =0; i<arr.length; i++){
-let item = arr[i];
-if (item > num){
-console.log(item);
-}
-}
-}
-biggerThanNum([-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60], 20);
+// function biggerThanNum(arr, num){
+// for (let i =0; i<arr.length; i++){
+// let item = arr[i];
+// if (item > num){
+// console.log(item);
+// }
+// }
+// }
+// biggerThanNum([-10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60], 20);

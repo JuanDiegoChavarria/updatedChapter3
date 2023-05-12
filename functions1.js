@@ -3,7 +3,7 @@
     //     console.log(`${value1} * ${value2} = ${value1*value2}`)
     // }
     // sum(7,12);
-    // sum(0,5);
+
 
     // function sum(pie,value1, value2){
     //     console.log(`${pie} + ${value1} + ${value2} = ${value1+value2+pie}`)
@@ -79,9 +79,5 @@
 // }
 // printMax();
 
-
-let value1 = 12;
-let value2 = 5;
-    console.log(`${value1} + ${value2} = ${value1+value2}`);
 
 
