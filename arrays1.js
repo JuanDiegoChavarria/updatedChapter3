@@ -36,13 +36,27 @@
 // }
 // everyThird([3,32,23,3,23,,4,4,3,5,6,43,3]);
 
-
 //6
-// function everySecond(arr){
-//     for ()
-// }
+
+// function second(arr){
+//     for (let i = 2; i<arr.length; i=i+2){
+//         console.log(arr[i])
+//     }
+//
+//     }
+// second([10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]);
+//
 
 //7
-// function biggerThanFour(arr){
-//     for ()
+//
+// let number = ['-10', '-5', '1', '2', '3', '4', '5', '6', '7', '8','9', '10', '11', '12', '13'];
+// for (let number = 4; number > 4 ; number++){
+//     console.log(number)
 // }
+
+//8
+
+let number = ['1', '2', '3', '4', '5', '6', '7', '8','9', '10', '11', '12', '13'];
+for (let number = 4; number > number ; number++){
+    console.log(number)
+}
