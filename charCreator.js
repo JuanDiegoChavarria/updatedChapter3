@@ -1,96 +1,80 @@
-const readLine = require('readline-sync');
+const readLine = require ('readline-sync');
 
-let diceRolled = []
-let eyeColors = ['blue','green','brown','hazel','black'];
-let race = ['werewolf','vampire','','giant','dwarf','elf'];
-let job = ['Black Smith','stone mason','miner','swords men','king','prince']
-let specialSkill = ['wall vision', 'super jump','flight','mind control']
+let diceRolled = [];
 let character1 = {
-//empty to start
 }
 
+let character2 = {
+}
 
-createChar(character1,diceRolled);
+let character3 = {
+}
+
+createChar(character1, diceRolled);
+createChar(character2, diceRolled);
+createChar(character3, diceRolled);
 
 function rolld6(){
-    return Math.ceil(Math.random*6)
+    return Math.ceil(Math.random()*6)
 }
 
 function rollDice(amount, list){
-    for(let i=0; i<amount; i++){
+    for (let i=0; i<amount; i++){
         let roll = rolld6();
-        console.log(`You rolled a ${roll}!`)
-        list.push(roll)
+        console.log(`You rolled ${roll}!`)
+        list.push(roll);
     }
 }
-
 function sum(list){
-    let sum=0
+    let sum = 0;
     for (let i=0; i<list.length; i++){
-        sum += list[i];
+        sum += list[i]
     }
-    console.log(`the total was: ${sum}.`)
     return sum;
 }
-
 function rollStat(list){
-    list = [];
+    list = []
     rollDice(4, list);
-    return sum(list)
+    return sum(list);
 }
-function pickRandomChoice(choices){
-    let randomNum = Math.floor(Math.random()*choices.length)
-    return choices[randomNum]
-}
-function pickRandomChoice2(choices){
-    let randomNum = Math.floor(Math.random()*choices.length)
-    return choices[randomNum]
-}
-function pickRandomChoice3(choices){
-    let randomNum = Math.floor(Math.random()*choices.length)
-    return choices[randomNum]
-}
-function pickRandomChoice4(choices){
-    let randomNum = Math.floor(Math.random()*choices.length)
-    return choices[randomNum]
-}
-
-
-function createChar(list, character){
-    character.name = readLine.question("Enter Character Name: ");
-    character.race = pickRandomChoice2(race);
-    character.eyeColor = pickRandomChoice(eyeColors);
-    character.job = pickRandomChoice3(job);
-    character.specialSkill = pickRandomChoice4(specialSkill)
-    console.log('Rolling STR')
-    character.strength= rollStat(diceRolled);
-    console.log('Rolling DEX')
-    character.dexterity= rollStat(diceRolled);
-    console.log('Rolling CON')
-    character.constitution= rollStat(diceRolled);
-    console.log('Rolling INT')
-    character.intelligence= rollStat(diceRolled);
-    console.log('Rolling WIS')
-    character.wisdom= rollStat(diceRolled);
-    console.log('Rolling CHA')
-    character.charisma= rollStat(diceRolled);
-    character.luck = rolld6();
-    displayChar(character)
+function createChar(character, list){
+    character.name = readLine.question("Enter Character Name: ")
+    character.age = readLine.question("Enter Character Age: ")
+    console.log("Rolling STR")
+    character.strength = rollStat(diceRolled);
+    console.log("Rolling DEX")
+    character.dexerity = rollStat(diceRolled);
+    console.log("Rolling CON")
+    character.constitution = rollStat(diceRolled);
+    console.log("Rolling INT")
+    character.intelligence = rollStat(diceRolled);
+    console.log("Rolling WIS")
+    character.wisdom = rollStat(diceRolled);
+    console.log("Rolling CHA")
+    character.charisma = rollStat(diceRolled);
+    console.log("Rolling Cooking Skills")
+    character.cook = rollStat(diceRolled);
+    console.log("Rolling Social Skills")
+    character.sk = rollStat(diceRolled);
+    console.log("Rolling HP")
+    character.hp = rollStat(diceRolled);
+    displayChar(character1)
+    displayChar(character2)
+    displayChar(character3)
 }
 
 function displayChar(char){
+    console.log('------------------------')
     console.log(`Name: ${char.name}`);
-    console.log(`Race: ${char.race}`)
-    console.log(`Job: ${char.job}`)
-    console.log(`Eye color: ${char.eyeColor}`)
-    console.log(`Special Skill: ${char.specialSkill}`)
+    console.log(`Age: ${char.age}`)
     console.log(`STR: ${char.strength}`);
-    console.log(`DEX: ${char.dexterity}`);
+    console.log(`DEX: ${char.dexerity}`);
     console.log(`CON: ${char.constitution}`);
     console.log(`INT: ${char.intelligence}`);
     console.log(`WIS: ${char.wisdom}`);
     console.log(`CHA: ${char.charisma}`);
-    console.log(`LUCK: ${char.luck}`)
-
+    console.log(`COOKING: ${char.cook}`);
+    console.log(`SOCIAL SKILLS: ${char.sk}`);
+    console.log(`HP: ${char.hp}`);
+    console.log('------------------------')
 }
-console.log('---------------------------------')
